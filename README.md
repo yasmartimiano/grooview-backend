@@ -11,7 +11,7 @@ O Grooview tem como objetivo proporcionar uma experiência organizada e interati
 - **Backend:** Java Spring Boot
 - **Banco de dados:** MySQL
 - **Frontend:** React
-- **Outras:** HTML, CSS, JavaScript
+- **Outras:** HTML, TailwindCSS, JavaScript
 - **Integração:** API do Spotify para autenticação de usuário e acesso a dados musicais.
 
 ## Funcionalidades
