@@ -8,10 +8,9 @@ Grooview é uma plataforma para avaliação de músicas e álbuns, permitindo qu
 O Grooview tem como objetivo proporcionar uma experiência organizada e interativa para os amantes de música, permitindo que descubram novos conteúdos, compartilhem suas opiniões e acompanhem a atividade da comunidade em tempo real.
 
 ## Tecnologias Usadas
-- **Backend:** Java Spring Boot
+- **Backend:** Java, Spring Boot (organizado como **monólito modular**)
 - **Banco de dados:** MySQL
-- **Frontend:** React
-- **Outras:** HTML, TailwindCSS, JavaScript
+- **Frontend:** React, HTML, TailwindCSS, JavaScript
 - **Integração:** API do Spotify para autenticação de usuário e acesso a dados musicais.
 
 ## Funcionalidades
@@ -23,10 +22,10 @@ O Grooview tem como objetivo proporcionar uma experiência organizada e interati
 - Timeline em tempo real mostrando avaliações recentes feitas pelos usuários.
 
 ## Estrutura do Projeto
-- **Microserviços:** cada serviço está separado em pastas diferentes, facilitando a manutenção, escalabilidade e organização do código.
-- **Backend:** contém as APIs REST, lógica de negócios e integração com o banco de dados e com a API do Spotify.
-- **Frontend:** interface do usuário construída em React, consumindo as APIs do backend e integrando a API do Spotify.
-- **Banco de Dados:** MySQL armazenando informações de usuários, músicas, avaliações e listas.
+- **Arquitetura em camadas:** o projeto possui front-end, back-end e banco de dados separados, garantindo organização e manutenção eficiente.  
+- **Monólito modular no Back-end:** cada módulo do back-end é organizado em pacotes separados, como usuários, músicas, playlists e avaliações, facilitando manutenção e escalabilidade dentro de um único projeto Spring Boot.  
+- **Frontend:** interface do usuário construída em React, consumindo as APIs do back-end e integrando a API do Spotify.  
+- **Banco de Dados:** MySQL armazenando informações de usuários, músicas, avaliações e listas.  
 - **Real-time:** sistema de atualização em tempo real para a timeline de avaliações.
 
 ## Exemplo de Uso da API do Spotify
@@ -43,3 +42,6 @@ Para contribuir com o projeto:
 3. Faça commit das alterações: `git commit -m "Descrição da feature"`.
 4. Envie para o repositório remoto: `git push origin minha-feature`.
 5. Abra um Pull Request para revisão.
+
+## Licença
+Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
